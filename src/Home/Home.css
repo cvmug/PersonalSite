@@ -1,0 +1,30 @@
+.home {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 35em;
+  height: 100vh;
+  width: auto;
+}
+
+.home-title{
+  font-size: 30px;
+}
+
+.home-name{
+ font-size: 80px
+}
+
+.home-text{
+  font-size: 25px;
+}
+
+a {
+  color: #6e6e6e;
+  margin-top: 20px;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #7a87c5;
+}
