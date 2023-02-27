@@ -1,0 +1,33 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  font-size: 1.2rem;
+}
+
+.sections {
+  display: flex;
+}
+
+.sections a {
+  text-decoration: none;
+  margin-left: 1.5rem;
+}
+
+.sections a:first-child {
+  margin-left: 0;
+}
+
+.a :hover{
+  cursor: pointer;
+}
+
+.link-style {
+  cursor: pointer;
+}
+
+.toggle-container {
+  margin-top: 23px;
+  margin-left: 1.5rem;
+}

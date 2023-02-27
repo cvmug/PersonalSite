@@ -1,5 +1,4 @@
 .bio {
-    color: #333;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -9,15 +8,16 @@
   }
   
   .bio-text {
-    width: 330px;
+    width: 600px;
   }
   
   .bio-image {
-    width: 325px;
-    height: 325px;
+    width: 275px;
+    height: 275px;
     border-radius: 50%;
-    margin: 0px 0px 100px 50px;
-    box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.2);
+    margin: 0px 0px 200px 50px;
+    border: 7px solid #525252;
+    filter: grayscale(.25);
   }
   
   h1 {
@@ -27,22 +27,17 @@
   }
   
   p {
-    font-size: 18px;
+    font-size: 23px;
     font-weight: 350;
     line-height: 1.5;
     text-align: left;
     margin-bottom: 20px;
-    max-width: 500px;
+    max-width: 600px;
   }
-  
-  a {
-    color: #333;
-    margin-top: 20px;
-    text-decoration: none;
-  }
-  
-  a:hover {
-    color: #7a87c5;
+
+  .technologies{
+    list-style:circle;
+    padding-bottom: 5em;
   }
   
   @media (max-width: 767px) {
@@ -52,14 +47,14 @@
       height: 100%;
     }
   
+    .bio-image {
+      display: none;
+    }
+
     .bio-text {
       width: 100%;
       text-align: center;
       margin-bottom: 20px;
-    }
-  
-    .bio-image {
-      display: none;
     }
   
     h1 {
@@ -68,7 +63,6 @@
   
     p {
       font-size: 16px;
-      max-width: 90%;
       text-align: center;
     }
   }

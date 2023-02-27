@@ -1,17 +1,26 @@
-import React from 'react'
+import React, { useState } from 'react';
 import './App.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import Home from './Home';
-import Nav from './Nav';
+import Home from './Home/Home';
+import Nav from './Nav/Nav';
+import About from './About/About';
+import Portfolio from './Portfolio/Portfolio';
 
 function App() {
+  const [darkMode, setDarkMode] = useState(false);
+
+  function toggleDarkMode() {
+    setDarkMode(!darkMode);
+  }
+
   return (
-    <div className="App">
+    <div className={`App ${darkMode ? 'dark-mode' : ''}`}>
       <header className="App-header">
-        <Nav />
+        <Nav darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
       </header>
       <div className='body'>
-      <Home />
+        <Home />
+        <About />
+        <Portfolio />
       </div>
     </div>
   );

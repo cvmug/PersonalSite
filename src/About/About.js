@@ -1,15 +1,11 @@
 import React from 'react'
-import './Home.css'
-import SocialLinks from './SocialLinks';
+import './About.css'
 
-export default function Home() {
+export default function About() {
   return (
-  <div className="bio">
-  
+  <div className="bio" id="about">
     <div className="bio-text">
-
-      <h1>Hello.</h1>
-
+      <h1>About me</h1>
       <p>
         I'm a fullstack developer with a healthcare background based in New York.
         <br />
@@ -20,15 +16,17 @@ export default function Home() {
         In addition to keeping up with current web development trends,  I also enjoy hiking, reading fantasy and sci-fi novels, knitting and crochet.
         <br />
         <br />
-        <a href="mailto:catherinemugnai@gmail.com" style={{ fontWeight: "600" }}>Contact me </a>
-        to get in touch.
+        Here are a few technologies I’ve been working with recently:
+        <ul className='technologies'>
+        <li>JavaScript (ES6+)</li>
+        <li>React</li>
+        <li>Node.js</li>
+        <li>Express.js</li>
+        <li>PostgreSQL</li>
+      </ul>
       </p>
-        <SocialLinks />
-
     </div>
-
-    <img src="https://i.ibb.co/bF3mvhH/square-pfp.jpg" alt="profile-image" className="bio-image" />
-
+    <img src="./pfp.jpg" alt="profile-image" className="bio-image" />
   </div>
 );
 }
