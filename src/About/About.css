@@ -1,69 +1,74 @@
 .bio {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    padding: 40px;
-    height: 100vh;
+  padding: 50px 0;
+  height: 100vh;
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  padding-left: 30px;
+}
+
+.bio-image {
+  display: block;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin: 0 auto 20px;
+}
+
+.bio-text {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin-bottom: 20px;}
+
+h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.technologies {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+}
+
+.technologies li {
+  padding: 10px;
+  margin-top: 10px;
+  margin-right: 10px;
+  border-radius: 5px;
+  background-color: #00b3c0;
+  color: white;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+@media (max-width: 767px) {
+  .bio {
+    padding: 30px;
   }
-  
-  .bio-text {
-    width: 600px;
-  }
-  
+
   .bio-image {
-    width: 275px;
-    height: 275px;
-    border-radius: 50%;
-    margin: 0px 0px 200px 50px;
-    border: 7px solid #525252;
-    filter: grayscale(.25);
+    width: 150px;
+    height: 150px;
+    margin-bottom: 10px;
   }
-  
+
   h1 {
-    font-size: 36px;
-    margin-bottom: 20px;
-    font-weight: 700;
-  }
-  
-  p {
-    font-size: 23px;
-    font-weight: 350;
-    line-height: 1.5;
-    text-align: left;
-    margin-bottom: 20px;
-    max-width: 600px;
+    font-size: 30px;
   }
 
-  .technologies{
-    list-style:circle;
-    padding-bottom: 5em;
+  h2 {
+    font-size: 20px;
   }
-  
-  @media (max-width: 767px) {
-    .bio {
-      flex-direction: column-reverse;
-      align-items: center;
-      height: 100%;
-    }
-  
-    .bio-image {
-      display: none;
-    }
-
-    .bio-text {
-      width: 100%;
-      text-align: center;
-      margin-bottom: 20px;
-    }
-  
-    h1 {
-      font-size: 28px;
-    }
-  
-    p {
-      font-size: 16px;
-      text-align: center;
-    }
-  }
-  
+}

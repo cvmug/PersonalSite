@@ -1,30 +1,51 @@
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+
 .home {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding-left: 35em;
   height: 100vh;
-  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 30px;
 }
 
-.home-title{
-  font-size: 30px;
+.home-title {
+  margin-bottom: 30px;
 }
 
-.home-name{
- font-size: 80px
+.title {
+  font-size: 24px;
 }
 
-.home-text{
-  font-size: 25px;
+.home-name {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.home-text {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.home-text a:hover{
+  color: #00eeff;
 }
 
 a {
-  color: #6e6e6e;
-  margin-top: 20px;
+  color: #00b3c0;
   text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  transition: color 0.3s ease;
 }
 
-a:hover {
-  color: #7a87c5;
+@media (max-width: 767px) {
+  .home {
+    margin-left: 20px;
+  }
 }
