@@ -4,3 +4,7 @@
     font-size: 45px;
     display: inline-block;
   }
+
+  .social-links a:hover {
+    color: #00eeff;
+  }

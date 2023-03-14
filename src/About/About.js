@@ -7,7 +7,7 @@ export default function About() {
     <div className="bio-text">
       <h1>About me</h1>
       <p>
-        I'm a fullstack developer with a healthcare background based in New York.
+        I'm a fullstack web developer with a healthcare background based in New York.
         <br />
         <br />
         I'm passionate about combining my experience in healthcare and knowledge of web development to work on projects that improve people's lives.
@@ -26,7 +26,7 @@ export default function About() {
       </ul>
       </p>
     </div>
-    <img src="./pfp.jpg" alt="profile-image" className="bio-image" />
+    {/* <img src="./pfp.jpg" alt="profile-image" className="bio-image" /> */}
   </div>
 );
 }
