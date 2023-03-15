@@ -9,7 +9,7 @@ import { FiChevronLeft, FiChevronRight } from 'react-icons/fi';
 
 export default function Portfolio() {
   return (
-    <div id="portfolio">
+    <section id="portfolio">
       <Carousel
         showThumbs={false}
         showIndicators={false}
@@ -82,6 +82,6 @@ export default function Portfolio() {
           </div>
         </div>
       </Carousel>
-    </div>
+    </section>
   );
 }

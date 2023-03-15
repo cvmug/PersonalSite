@@ -18,9 +18,11 @@ function App() {
         <Nav darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
       </header>
       <div className='body'>
+      <div className="scroll-container">
         <Home />
         <About />
         <Portfolio />
+      </div>
       </div>
     </div>
   );

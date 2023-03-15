@@ -1,5 +1,5 @@
 .bio {
-  padding: 50px 0;
+  padding: 50px 0 0 0;
   height: 100vh;
   max-width: 800px;
   margin: 0 auto;
@@ -17,9 +17,11 @@
 }
 
 .bio-text {
+  height: 100vh;
   font-size: 1.2rem;
   line-height: 1.5;
-  margin-bottom: 20px;}
+  /* margin-bottom: 20px; */
+}
 
 h1 {
   font-size: 36px;
@@ -55,7 +57,7 @@ a:hover {
 
 @media (max-width: 767px) {
   .bio {
-    padding: 30px;
+    padding: 0px;
     margin-left: 20px;
   }
 
