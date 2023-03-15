@@ -9,7 +9,7 @@
 
 .project {
   margin: 50px auto;
-  height: 100vh;
+  height: auto;
   margin: 0 auto;
   display: flex;
   text-align: left;
@@ -17,14 +17,24 @@
 }
 
 .project-description {
-  max-width: 600px;
+  max-width: 650px;
+}
+
+.project-content {
+  border: 2px solid #e0e0e0;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 0 20px 20px 20px;
+  margin-left: 60px;
 }
 
 .project-description h1 {
+  margin-left: 65px;
   font-size: 2.5rem;
 }
 
 .project-description h3 {
+  margin-left: 65px;
   font-size: 1.5rem;
 }
 
@@ -40,18 +50,117 @@
   max-width: 600px;
 }
 
+.custom-arrow-prev {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 0.75rem;
+  opacity: 0.3;
+  cursor: pointer;
+  z-index: 20;
+  left: 5px;
+  margin-left: 5px;
+}
+
+.custom-arrow-prev:hover {
+  opacity: 1;
+}
+
+.custom-arrow-next {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 0.75rem;
+  opacity: 0.3;
+  cursor: pointer;
+  z-index: 20;
+  right: 550px;
+}
+
+.custom-arrow-next:hover {
+  opacity: 1;
+}
+
+.arrow-icon {
+  width: 2.25rem;
+  height: 2.25rem;
+  color: rgb(0, 0, 0);
+}
+
+
 @media screen and (max-width: 767px) {
   #portfolio {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    margin: auto;
+    padding: 0;
+    height: 100vh;
+    max-width: 800px;
+    margin: auto;
+    display: block;
   }
 
   .project {
-    text-align: left;
-    max-width: 300px;
+    margin: 0;
+    height: auto;
+    padding: 0;
+    display: block;
   }
-  .project-image {
-    max-width: 600px;
+
+  .project-description {
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .project-description h1{
+    font-size: 30px;
+    margin-left: 20px;
+    padding-left: 30px;
+    margin-bottom: 0;
+  }
+
+  .project-description h3 { 
+    margin-top: 5px;
+    margin-left: 20px;
+    padding-left: 30px;
+    font-size: 20px;
+  }
+
+  .project-content {
+    border: 2px solid #e0e0e0;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    margin: 0;
+  }
+
+  .custom-arrow-prev {
+    position: absolute;
+    left: 0;
+    top: 8%;
+    transform: translateY(-50%);
+    padding: 0.75rem;
+    opacity: 0.3;
+    cursor: pointer;
+    z-index: 20;
+    left: -15px;
+    margin-left: 5px;
+    border: none;
+    background: none;
+  }
+  
+  .custom-arrow-next {
+    position: absolute;
+    right: 0;
+    top: 8%;
+    transform: translateY(-50%);
+    padding: 0.75rem;
+    opacity: 0.3;
+    cursor: pointer;
+    z-index: 20;
+    right: 0;
+    border: none;
+    background: none;
   }
 }

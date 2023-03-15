@@ -56,6 +56,7 @@ a:hover {
 @media (max-width: 767px) {
   .bio {
     padding: 30px;
+    margin-left: 20px;
   }
 
   .bio-image {
