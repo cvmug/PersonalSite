@@ -47,5 +47,6 @@ a {
 @media (max-width: 767px) {
   .home {
     margin-left: 20px;
+    padding-left: 0px;
   }
 }

@@ -14,6 +14,13 @@
   font-weight: bold;
   margin: 20px 30px;
   cursor: pointer;
+  background: none;
+}
+
+.name, .portfolio-nav, .about{
+  border: none;
+  color: #00b3c0;
+  background: none;
 }
 
 .sections {
@@ -93,7 +100,6 @@
   border-color: #fff;
 }
 
-
 @media (max-width: 767px) {
   .navbar {
     padding: 10px;
@@ -102,11 +108,26 @@
   .name {
     font-size: 20px;
     margin: 10px 20px;
+    background: none;
   }
 
   .sections {
     display: none;
   }
+
+  .portfolio-nav, .about, .resume {
+    font-size: 50px;
+    background: none;
+    margin: 0px;
+    padding: 15px;
+  }
+
+  .toggle-container{
+font-size: 30px;
+margin-bottom: 15px;  
+padding: 0px;
+}
+
 
   .sections-mobile {
     font-size: 50px;
@@ -130,7 +151,7 @@
     color: white;
   }
   
-  /* .menu-toggle {
+  .menu-toggle {
     color: #00b3c0;
     display: block;
     width: 24px;
@@ -140,7 +161,7 @@
     right: 30px;
     cursor: pointer;
     z-index: 3;
-  } */
+  }
   .menu-toggle {
     color: #00b3c0;
     display: block;
@@ -153,6 +174,7 @@
     z-index: 3;
     transition: transform 0.3s ease;
   }
+  
   .menu-toggle div {
     width: 24px;
     height: 2px;
@@ -165,7 +187,7 @@
   .menu-toggle.active {
     transform: rotate(90deg);
   }
-  /* .menu-toggle div {
+  .menu-toggle div {
     width: 24px;
     height: 2px;
     background-color: #00b3c0;
@@ -177,7 +199,7 @@
   .menu-toggle.active {
     transform: rotate(90deg) translate(0, 0);
     transition: all 0.3s ease;
-  } */
+  }
 
   .navbar.active .sections {
     display: block;

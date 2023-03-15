@@ -3,7 +3,7 @@ import './About.css'
 
 export default function About() {
   return (
-  <div className="bio" id="about">
+  <section id="about" className="bio">
     <div className="bio-text">
       <h1>About me</h1>
       <p>
@@ -27,7 +27,7 @@ export default function About() {
       </p>
     </div>
     {/* <img src="./pfp.jpg" alt="profile-image" className="bio-image" /> */}
-  </div>
+  </section>
 );
 }
 

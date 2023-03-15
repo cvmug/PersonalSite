@@ -1,10 +1,12 @@
 #portfolio {
-  margin: 50px auto;
-  padding: 50px 0;
+  margin: 20px auto;
   height: 100vh;
   max-width: 800px;
-  margin: 0 auto;
   display: flex;
+  /* flex-direction: column; */
+  /* align-items: center; */
+  overflow: auto;
+  overflow-x: hidden;
 }
 
 .project {
@@ -14,6 +16,7 @@
   display: flex;
   text-align: left;
   padding-left: 30px;
+  max-height: 7500px;
 }
 
 .project-description {
@@ -34,6 +37,8 @@
 }
 
 .project-description h3 {
+  padding-top: 0px;
+  margin-top: 0px;
   margin-left: 65px;
   font-size: 1.5rem;
 }
@@ -43,11 +48,11 @@
 }
 
 .project-description p {
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 .project-image {
-  max-width: 600px;
+  max-width: 530px;
 }
 
 .custom-arrow-prev {
@@ -76,7 +81,7 @@
   opacity: 0.3;
   cursor: pointer;
   z-index: 20;
-  right: 550px;
+  right: 485px;
 }
 
 .custom-arrow-next:hover {
@@ -121,7 +126,6 @@
   }
 
   .project-description h3 { 
-    margin-top: 5px;
     margin-left: 20px;
     padding-left: 30px;
     font-size: 20px;
@@ -138,7 +142,7 @@
   .custom-arrow-prev {
     position: absolute;
     left: 0;
-    top: 8%;
+    top: 11%;
     transform: translateY(-50%);
     padding: 0.75rem;
     opacity: 0.3;
@@ -153,7 +157,7 @@
   .custom-arrow-next {
     position: absolute;
     right: 0;
-    top: 8%;
+    top: 11%;
     transform: translateY(-50%);
     padding: 0.75rem;
     opacity: 0.3;
