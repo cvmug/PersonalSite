@@ -26,6 +26,8 @@
 h1 {
   font-size: 36px;
   margin-bottom: 20px;
+  color: #fff; /* Choose the color you want for your text */
+  text-shadow: 0 0 5px #00ffff, 0 0 10px #00ffff;
 }
 
 h2 {

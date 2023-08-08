@@ -24,7 +24,6 @@
 }
 
 .project-content {
-  border: 2px solid #e0e0e0;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   padding: 0 20px 20px 20px;
@@ -91,7 +90,7 @@
 .arrow-icon {
   width: 2.25rem;
   height: 2.25rem;
-  color: rgb(0, 0, 0);
+  color: aqua;
 }
 
 
@@ -132,7 +131,6 @@
   }
 
   .project-content {
-    border: 2px solid #e0e0e0;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     padding: 10px;
@@ -167,4 +165,10 @@
     border: none;
     background: none;
   }
+}
+
+.custom-arrow-prev,
+.custom-arrow-next {
+  background: none; /* Removes background color */
+  border: none; /* Removes border */
 }
