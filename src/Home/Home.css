@@ -7,8 +7,39 @@
 }
 
 .content {
-  max-width: 800px; /* adjust as needed */
+  max-width: 800px;
+  text-align: center; 
+  color: #fff;
+}
+
+.intro {
+  margin-bottom: 20px;
+}
+
+.greeting {
   font-size: 3em;
-  color: #fff; /* Choose the color you want for your text */
+  text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff, 0 0 30px #00ffff, 0 0 40px #00ffff;
+}
+
+.profession {
+  font-size: 1.5em; 
+}
+
+.contact-section {
+  margin-top: 20px;
+  padding-bottom: 20px;
+}
+
+.contact-link {
+  font-weight: 600;
+  color: #00ffff;
+}
+
+.social-links{
+  color: #fff;
+  text-shadow: 0 0 5px #00ffff, 0 0 10px #00ffff;
+}
+
+.social-links:hover {
   text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff, 0 0 30px #00ffff, 0 0 40px #00ffff;
 }

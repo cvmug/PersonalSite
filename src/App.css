@@ -19,7 +19,7 @@
   font-style: normal;
 }
 
-*{
+* {
   font-family: 'GlitchDemoRegular', sans-serif;
 }
 
@@ -27,14 +27,13 @@ body {
   margin: 0;
   padding: 0;
   background: radial-gradient(circle at center,
-  rgb(15, 109, 121) 0%,
-  rgb(15, 64, 74) 10%,
-  rgb(18, 51, 61) 15%,
-  rgb(13, 35, 42) 25%,
-  rgb(13, 29, 34) 31%,
-  rgb(7, 14, 17) 40%,
-  rgb(0, 0, 0) 51%
-);
+      rgb(15, 109, 121) 0%,
+      rgb(15, 64, 74) 10%,
+      rgb(18, 51, 61) 15%,
+      rgb(13, 35, 42) 25%,
+      rgb(13, 29, 34) 31%,
+      rgb(7, 14, 17) 40%,
+      rgb(0, 0, 0) 51%);
 
   width: 100vw;
   color: aqua;
@@ -62,10 +61,15 @@ section {
   height: 100vh;
 }
 
-.light-mode h1, .light-mode .content, .light-mode .name {
-  color: rgb(0, 0, 0); /* Black */
+.light-mode h1,
+.light-mode .content,
+.light-mode .name {
+  color: rgb(0, 0, 0);
 }
 
-.light-mode .about.link-style, .light-mode .portfolio-nav.link-style, .light-mode .resume {
-  color: rgb(0, 0, 0); /* Black */
+.light-mode .about.link-style,
+.light-mode .portfolio-nav.link-style,
+.light-mode .resume,
+.light-mode .contact-link {
+  color: rgb(0, 0, 0);
 }

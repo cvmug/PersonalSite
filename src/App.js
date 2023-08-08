@@ -16,9 +16,8 @@ function App() {
   useEffect(() => {
     loadFull({
       selector: '#particle-container',
-      // Your particles options here
     });
-  }, []); // Empty dependency array to run the effect only once
+  }, []);
 
   return (
     <div className={`App ${lightMode ? 'light-mode' : ''}`}>
@@ -38,5 +37,3 @@ function App() {
 }
 
 export default App;
-
-// Other CSS styles here...

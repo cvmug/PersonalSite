@@ -169,6 +169,6 @@
 
 .custom-arrow-prev,
 .custom-arrow-next {
-  background: none; /* Removes background color */
-  border: none; /* Removes border */
+  background: none;
+  border: none;
 }
