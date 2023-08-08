@@ -3,7 +3,7 @@ import './Nav.css';
 import { FaSun, FaMoon } from 'react-icons/fa';
 import CatherineMugnai_Resume from '../CatherineMugnai_Resume.pdf';
 
-function Nav({ darkMode, toggleDarkMode }) {
+function Nav({ lightMode, toggleLightMode }) {
   const [isOpen, setIsOpen] = useState(false);
 
   function smoothScrollTo(targetId) {
@@ -14,7 +14,7 @@ function Nav({ darkMode, toggleDarkMode }) {
   }
 
   return (
-    <nav className={`navbar ${darkMode ? 'dark-mode' : ''}`}>
+    <nav className={`navbar ${lightMode ? 'light-mode' : ''}`}>
       <button
         className="name link-style"
         onClick={() => smoothScrollTo("home")}
@@ -46,8 +46,8 @@ function Nav({ darkMode, toggleDarkMode }) {
         <a className='resume' href={CatherineMugnai_Resume} target="_blank">
           Resume
         </a>
-        <div className="toggle-container" onClick={toggleDarkMode}>
-          {darkMode ? <FaSun /> : <FaMoon />}
+        <div className="toggle-container" onClick={toggleLightMode}>
+          {lightMode ? <FaMoon /> : <FaSun />}
         </div>
         <div className="menu-container">
           <div
@@ -62,8 +62,8 @@ function Nav({ darkMode, toggleDarkMode }) {
       </div>
       {isOpen && (
         <div className="sections-mobile">
-          <div className="toggle-container" onClick={toggleDarkMode}>
-            {darkMode ? <FaSun /> : <FaMoon />}
+          <div className="toggle-container" onClick={toggleLightMode}>
+            {lightMode ? < FaMoon/> : <FaSun />}
           </div>
           <button
             className='about link-style'

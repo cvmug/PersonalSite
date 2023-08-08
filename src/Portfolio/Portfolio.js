@@ -1,8 +1,8 @@
 import React from 'react';
 import './Portfolio.css';
-import fitnesstracker_img from '../images/fitnesstracker.png';
-import strangersthings_img from '../images/strangersthings.png';
-import fetchfarm_img from '../images/fetchfarm.png';
+import fitnesstracker_img from '../Images/fitnesstracker.png';
+import strangersthings_img from '../Images/strangersthings.png';
+import fetchfarm_img from '../Images/fetchfarm.png';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import { FiChevronLeft, FiChevronRight } from 'react-icons/fi';

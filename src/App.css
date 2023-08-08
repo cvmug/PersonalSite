@@ -1,13 +1,43 @@
+/* @font-face {
+  font-family: 'Inter';
+  src: url('../public/static/Inter-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('../public/static/Inter-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+} */
+
+@font-face {
+  font-family: 'GlitchDemoRegular';
+  src: url('../public/static/GlitchDemoRegular-2Oave.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
 *{
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: 'GlitchDemoRegular', sans-serif;
 }
 
 body {
   margin: 0;
   padding: 0;
-  background-color: #ebeae8;
-  height: 100vh;
+  background: radial-gradient(circle at center,
+  rgb(15, 109, 121) 0%,
+  rgb(15, 64, 74) 10%,
+  rgb(18, 51, 61) 15%,
+  rgb(13, 35, 42) 25%,
+  rgb(13, 29, 34) 31%,
+  rgb(7, 14, 17) 40%,
+  rgb(0, 0, 0) 51%
+);
+
   width: 100vw;
+  color: aqua;
 }
 
 .App {
@@ -15,9 +45,9 @@ body {
   width: 100%;
 }
 
-.dark-mode {
-  background-color: #161616;
-  color: white;
+.light-mode {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
 }
 
 .scroll-container {
@@ -30,4 +60,12 @@ body {
 section {
   scroll-snap-align: start;
   height: 100vh;
+}
+
+.light-mode h1, .light-mode .content, .light-mode .name {
+  color: rgb(0, 0, 0); /* Black */
+}
+
+.light-mode .about.link-style, .light-mode .portfolio-nav.link-style, .light-mode .resume {
+  color: rgb(0, 0, 0); /* Black */
 }

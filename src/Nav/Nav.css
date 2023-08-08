@@ -1,40 +1,81 @@
+
+.navbar,
+.name,
+.portfolio-nav,
+.about,
+.resume {
+  font-family: 'GlitchDemoRegular', sans-serif;
+}
+
 .navbar {
+  font-family: 'GlitchDemoRegular', sans-serif;
   position: fixed;
-  top: 0;
+  /* top: 0; */
   left: 0;
   width: 100vw;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
   z-index: 1;
-  background-color: #f1f1f1;
+  background: linear-gradient(to bottom, rgba(0, 255, 255, 0.8), rgba(0, 128, 128, 0));
+  padding:  0; /* this will add 10px padding at the top and bottom, adjust as needed */
+
+  display: flex;
+  justify-content: space-between;
+  height: 70px; /* Adjust as needed */
 }
 
 .name {
   display: inline-block;
-  font-size: 24px;
+  font-size: 32px;
   font-weight: bold;
-  margin: 20px 30px;
-  cursor: pointer;
+margin-left: 30px;  
+    cursor: pointer;
+  background: none;
+  color: #fff; /* Choose the color you want for your text */
+  text-shadow: 0 0 5px #00ffff, 0 0 10px #00ffff;
+  background: none;
+  border: none;
+  padding-bottom: 10px;
+  transition: text-shadow 0.3s ease-in-out;
+}
+
+.name:hover {
+  text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff, 0 0 30px #00ffff, 0 0 40px #00ffff;
+}
+
+
+
+a:visited {
+  color: rgb(0, 0, 0); /* Change this to the color you want */
+}
+
+body.light-mode a:visited {
+  color: black; /* This will apply when light mode is on */
+}
+
+.portfolio-nav,
+.about {
+  border: none;
+  color: #000000;
   background: none;
 }
 
-.name, .portfolio-nav, .about{
-  border: none;
-  color: #00b3c0;
-  background: none;
+a{
+  color: #000000; /* Change this to the color you want */
 }
 
 .sections {
   display: inline-block;
-  float: right;
 }
 
 .about,
 .portfolio-nav,
 .resume {
+  /* color: aqua; */
+
   text-decoration: none;
   display: inline-block;
-  font-size: 18px;
-  margin: 20px 30px;
+  font-size: 24px;
+  margin-left: 30px;  /* reduce the top/bottom margin from 20px to 10px */
   cursor: pointer;
   transition: color 0.3s ease;
 }
@@ -42,21 +83,23 @@
 .resume {
   border-radius: 5px;
   text-decoration: none;
+  /* color: aqua; */
+
   display: inline-block;
-  font-size: 18px;
+  font-size: 24px;
   margin: 20px 30px;
   cursor: pointer;
-  padding: 5px 10px;
+  /* padding: 5px 10px; */
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-.resume:hover {
+/* .resume:hover {
   background-color: #006d80;
   border-radius: 5px;
   color: white;
-}
+} */
 
-.about:hover,
+.about:hover, .resume:hover,
 .portfolio-nav:hover:hover {
   color: #00eeff;
 }
@@ -106,7 +149,7 @@
   }
 
   .name {
-    font-size: 20px;
+    font-size: 32px;
     margin: 10px 20px;
     background: none;
   }
@@ -115,22 +158,30 @@
     display: none;
   }
 
-  .portfolio-nav, .about, .resume {
+  .portfolio-nav,
+  .about,
+  .resume {
     font-size: 50px;
     background: none;
     margin: 0px;
+    color: aqua;
     padding: 15px;
   }
 
-  .toggle-container{
-font-size: 30px;
-margin-bottom: 15px;  
-padding: 0px;
-}
+  .toggle-container {
+    font-size: 30px;
+    margin-bottom: 15px;
+    padding: 0px;
+  }
 
+  .a.resume.link-style{
+    color: aqua;
+
+  }
 
   .sections-mobile {
     font-size: 50px;
+    color: aqua;
     position: fixed;
     top: 50vh;
     left: 50vw;
@@ -143,27 +194,21 @@ padding: 0px;
     height: 100%;
     z-index: 2;
     transition: all 0.3s ease;
-    background: white;
+    background-color: #000000;
   }
 
-  .dark-mode .sections-mobile {
-    background-color: #161616;
-    color: white;
+  .light-mode .sections-mobile {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
   }
-  
-  .menu-toggle {
-    color: #00b3c0;
-    display: block;
-    width: 24px;
-    height: 24px;
-    position: absolute;
-    top: 20px;
-    right: 30px;
-    cursor: pointer;
-    z-index: 3;
+
+  .light-mode .menu-toggle div {
+    background-color: #000000;
+    color: rgb(0, 0, 0);
   }
+
   .menu-toggle {
-    color: #00b3c0;
+    color: #000000;
     display: block;
     width: 24px;
     height: 24px;
@@ -174,28 +219,19 @@ padding: 0px;
     z-index: 3;
     transition: transform 0.3s ease;
   }
-  
+
   .menu-toggle div {
     width: 24px;
-    height: 2px;
-    background-color: #00b3c0;
-    margin: 4px 0;
-    border-radius: 5px;
+    height: 7px;
+    background-color: #ffffff;
+    margin: 3px 0;
     transition: all 0.3s ease;
   }
-  
+
   .menu-toggle.active {
     transform: rotate(90deg);
   }
-  .menu-toggle div {
-    width: 24px;
-    height: 2px;
-    background-color: #00b3c0;
-    margin: 4px 0;
-    border-radius: 5px;
-    transition: all 0.3s ease;
-  }
-  
+
   .menu-toggle.active {
     transform: rotate(90deg) translate(0, 0);
     transition: all 0.3s ease;
@@ -216,5 +252,9 @@ padding: 0px;
   .navbar.active .sections a {
     display: block;
     margin: 10px 0;
+  }
+
+  a:visited {
+    color: aqua;
   }
 }
