@@ -16,8 +16,27 @@
   margin-bottom: 20px;
 }
 
-.greeting {
+/* .greeting {
   font-size: 3em;
+  text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff, 0 0 30px #00ffff, 0 0 40px #00ffff;
+} */
+
+.greeting {
+  display: inline-block;
+  font-size: 3em;
+  font-weight: bold;
+  margin-left: 30px;
+  cursor: default;
+  background: none;
+  color: #fff;
+  text-shadow: 0 0 5px #00ffff, 0 0 10px #00ffff;
+  background: none;
+  border: none;
+  padding-bottom: 10px;
+  transition: text-shadow 0.3s ease-in-out;
+}
+
+.greeting:hover {
   text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff, 0 0 30px #00ffff, 0 0 40px #00ffff;
 }
 
@@ -35,9 +54,10 @@
   color: #00ffff;
 }
 
-.social-links{
+.social-links {
   color: #fff;
   text-shadow: 0 0 5px #00ffff, 0 0 10px #00ffff;
+  transition: text-shadow 0.3s ease-in-out;
 }
 
 .social-links:hover {

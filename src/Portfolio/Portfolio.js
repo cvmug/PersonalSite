@@ -1,7 +1,7 @@
 import React from 'react';
 import './Portfolio.css';
 import fitnesstracker_img from '../Images/fitnesstracker.png';
-import strangersthings_img from '../Images/strangersthings.png';
+import trailfinder_img from '../Images/trailfinder.png';
 import fetchfarm_img from '../Images/fetchfarm.png';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
@@ -29,27 +29,31 @@ export default function Portfolio() {
       >
         <div className="project">
           <div className="project-description">
-            <h1>Fetch Farm</h1>
+            <h1>Trail Finder</h1>
             <h3>
-              <a href="https://github.com/cvmug/FarmersMarketFrontend" style={{ fontWeight: "600" }}>GitHub</a> | <a href="https://calm-faun-13d879.netlify.app/" style={{ fontWeight: "600" }}>Netlify</a>
+              <a href="https://github.com/cvmug/TrailFinder" style={{ fontWeight: "600" }}>
+                GitHub</a> | <a href="https://trailfinder.netlify.app/" style={{ fontWeight: "600" }}>Netlify</a>
             </h3>
             <div className='project-content'>
               <p>
-                Fetch Farm is a mock ecommerce web application that aims to connect farmers with customers.
-                The web application allows users to create an account, browse products, add products to their
-                cart, and checkout. An admin only page exists for administrators to create, edit, and delete
-                existing products from the server. The application was built using several technologies,
-                including JavaScript, React, PostgreSQL, React Router, Git, Express.js, Node.js, HTML, CSS
+              Trail Finder is a web application dedicated to National Parks exploration and discovery.
+              Users can access extensive information on parks, including locations, camping sites, visitor 
+              facilities, and more. The application leverages the NPS API and Google Geolocation API to 
+              fetch and display detailed park information, providing a comprehensive guide for outdoor 
+              enthusiasts. The front-end UI is designed to enhance user navigation with responsive visual aids. 
+              Trail Finder was constructed using key technologies such as JavaScript, React, Axios, HTML, CSS,
+              along with the integration of the NPS API and Google Geolocation API.
               </p>
-              <img src={fetchfarm_img} alt="Project 0" className="project-image" />
+              <img src={trailfinder_img} alt="Project 0" className="project-image" />
             </div>
           </div>
         </div>
         <div className="project">
           <div className="project-description">
-            <h1>Fitness Tracker</h1>
+            <h1>Fetch Tracker</h1>
             <h3>
-              <a href="https://github.com/cvmug/fitness-tracker-frontend" style={{ fontWeight: "600" }}>GitHub</a> | <a href="https://silly-torte-725ca7.netlify.app/" style={{ fontWeight: "600" }}> Netlify</a>
+              <a href="https://github.com/cvmug/FarmersMarketFrontend" style={{ fontWeight: "600" }}>
+                GitHub</a> | <a href="https://calm-faun-13d879.netlify.app/" style={{ fontWeight: "600" }}> Netlify</a>
             </h3>
             <div className='project-content'>
               <p>
@@ -60,24 +64,27 @@ export default function Portfolio() {
                 application was built using several technologies, including JavaScript, React, AJAX, React
                 Router, Git, Express.js, Node.js, HTML, and CSS.
               </p>
-              <img src={fitnesstracker_img} alt="Project 1" className="project-image" />
+              <img src={fetchfarm_img} alt="Project 1" className="project-image" />
             </div>
           </div>
         </div>
         <div className="project">
           <div className="project-description">
-            <h1>Stanger's Things</h1>
+            <h1>Fitness Farm</h1>
             <h3>
-              <a href="https://github.com/cvmug/strangersthings" style={{ fontWeight: "600" }}>GitHub</a> | <a href="https://cheery-croquembouche-e3affd.netlify.app/" style={{ fontWeight: "600" }}>Netlify</a>
+              <a href="https://github.com/cvmug/fitness-tracker-frontend" style={{ fontWeight: "600" }}>
+                GitHub</a> | <a href="https://silly-torte-725ca7.netlify.app/" style={{ fontWeight: "600" }}>Netlify</a>
             </h3>
             <div className='project-content'>
               <p>
-                Stranger's Things is a mock online buying and selling plaform utilizing an API. Users are able
-                to register and log in to post new items for sale, message sellers, and view received and sent
-                messages on their profile. All users are able to view items for sale. The application was built
-                using several technologies, including JavaScript, React, AJAX, React Router, Git, HTML, and CSS.
+                Fitness Tracker is a comprehensive web application that utilizies an API to enable users to
+                register and log in to create personalized workouts. With this app, registered users can easily
+                create new activities to add to their routines, or select from an extensive list of existing
+                activities. Additionally, all users can view a list of public routines and activities. The
+                application was built using several technologies, including JavaScript, React, AJAX, React
+                Router, Git, Express.js, Node.js, HTML, and CSS.
               </p>
-              <img src={strangersthings_img} alt="Project 2" className="project-image" />
+              <img src={fitnesstracker_img} alt="Project 2" className="project-image" />
             </div>
           </div>
         </div>
