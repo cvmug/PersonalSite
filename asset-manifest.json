@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.4dbf28ca.css",
-    "main.js": "/static/js/main.ada23f97.js",
+    "main.js": "/static/js/main.1cd07e8f.js",
     "static/media/trailfinder.png": "/static/media/trailfinder.a209ab19b8ad18cd9a1b.png",
     "static/media/fetchfarm.png": "/static/media/fetchfarm.fc804f879084c58854c0.png",
     "static/media/fitnesstracker.png": "/static/media/fitnesstracker.3ca1f3c43a72589123df.png",
@@ -9,10 +9,10 @@
     "static/media/GlitchDemoRegular-2Oave.ttf": "/static/media/GlitchDemoRegular-2Oave.16cfae61173abb1135d0.ttf",
     "index.html": "/index.html",
     "main.4dbf28ca.css.map": "/static/css/main.4dbf28ca.css.map",
-    "main.ada23f97.js.map": "/static/js/main.ada23f97.js.map"
+    "main.1cd07e8f.js.map": "/static/js/main.1cd07e8f.js.map"
   },
   "entrypoints": [
     "static/css/main.4dbf28ca.css",
-    "static/js/main.ada23f97.js"
+    "static/js/main.1cd07e8f.js"
   ]
 }
